@@ -1,0 +1,1 @@
+ALTER TABLE `Order` ADD COLUMN `couponCode` VARCHAR(30) NULL;

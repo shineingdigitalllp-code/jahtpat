@@ -1,0 +1,22 @@
+{
+  "name": "jhatpat",
+  "private": true,
+  "packageManager": "pnpm@10.34.1",
+  "scripts": {
+    "dev": "pnpm --filter @jhatpat/web dev",
+    "dev:admin": "pnpm --filter @jhatpat/admin dev",
+    "dev:api": "pnpm --filter @jhatpat/api dev",
+    "dev:all": "pnpm --parallel --filter @jhatpat/web --filter @jhatpat/admin --filter @jhatpat/api dev",
+    "build": "pnpm -r build",
+    "build:hostinger": "node hostinger/build.cjs",
+    "start": "node hostinger/start.cjs",
+    "lint": "pnpm -r lint",
+    "typecheck": "pnpm -r typecheck",
+    "test": "pnpm --filter @jhatpat/api test",
+    "format": "prettier --write ."
+  },
+  "devDependencies": {
+    "prettier": "^3.9.10",
+    "prettier-plugin-tailwindcss": "^0.8.1"
+  }
+}

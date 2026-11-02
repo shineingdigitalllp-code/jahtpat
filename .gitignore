@@ -1,0 +1,10 @@
+node_modules
+.pnpm-store
+jhatpat-hostinger.zip
+.next
+dist
+*.tsbuildinfo
+next-env.d.ts
+apps/api/src/generated/
+.env*
+!.env.example
